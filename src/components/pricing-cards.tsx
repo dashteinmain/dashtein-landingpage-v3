@@ -112,7 +112,11 @@ const PricingCards = () => {
                             <Link
                                 href={plan.btn.href}
                                 style={{ width: "100%" }}
-                                className={buttonVariants({ className: plan.name === "Pro" && "bg-primary hover:bg-primary/80 text-primary-foreground" })}
+                                className={buttonVariants({
+                                    className: plan.name === "Pro"
+                                        ? "bg-primary hover:bg-primary/80 text-primary-foreground"
+                                        : "bg-primary/60 hover:bg-primary/50 text-primary-foreground"
+                                })}
                             >
                                 {plan.btn.text}
                             </Link>
@@ -182,7 +186,11 @@ const PricingCards = () => {
                             <Link
                                 href={plan.btn.href}
                                 style={{ width: "100%" }}
-                                className={buttonVariants({ className: plan.name === "Pro" && "bg-primary hover:bg-primary/80 text-primary-foreground" })}
+                                className={buttonVariants({
+                                    className: plan.name === "Pro"
+                                        ? "bg-primary hover:bg-primary/80 text-primary-foreground"
+                                        : "bg-primary/60 hover:bg-primary/50 text-primary-foreground"
+                                })}
                             >
                                 {plan.btn.text}
                             </Link>
