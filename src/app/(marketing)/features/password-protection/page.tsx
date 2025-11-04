@@ -22,13 +22,13 @@ const LinkShorteningPage = () => {
                         </p>
                         <div className="flex items-center justify-center gap-x-4 mt-8">
                             <Button size="sm" asChild>
-                                <Link href="/dashboard">
+                                <Link href="/#contact">
                                     Get started
                                 </Link>
                             </Button>
                             <Button size="sm" variant="outline" asChild>
-                                <Link href="/blog">
-                                    Learn more
+                                <Link href="/pricing">
+                                    View Pricing
                                 </Link>
                             </Button>
                         </div>
@@ -83,7 +83,7 @@ const LinkShorteningPage = () => {
                             </p>
                             <div className="mt-6">
                                 <Button asChild>
-                                    <Link href="/auth/sign-up" className="flex items-center">
+                                    <Link href="/#contact" className="flex items-center">
                                         Get started for free
                                         <ArrowRightIcon className="w-4 h-4 ml-2" />
                                     </Link>
