@@ -2,7 +2,7 @@ import { buttonVariants } from "@/components/ui/button";
 import { Calendar } from "@/components/ui/calendar";
 import { Command, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList } from "@/components/ui/command";
 import { cn } from "@/utils";
-import { ArrowRightIcon, CalendarIcon, Link2Icon, SearchIcon, WaypointsIcon } from "lucide-react";
+import { ArrowRightIcon, CalendarIcon, Link2Icon, SearchIcon, WaypointsIcon, Receipt } from "lucide-react";
 import Link from "next/link";
 import { ReactNode } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./card";
@@ -12,9 +12,9 @@ import { Label } from "./label";
 
 export const CARDS = [
     {
-        Icon: Link2Icon,
-        name: "Shorten links",
-        description: "Create short links that are easy to remember and share.",
+        Icon: Receipt,
+        name: "Facturobot",
+        description: "Automatiza el procesamiento de facturas vía WhatsApp con IA.",
         href: "#",
         cta: "Learn more",
         className: "col-span-3 lg:col-span-1",
@@ -42,12 +42,38 @@ export const CARDS = [
         ),
     },
     {
-        Icon: SearchIcon,
-        name: "Search your links",
-        description: "Quickly find the links you need with AI-powered search.",
+        Icon: CalendarIcon,
+        name: "AgendaBot",
+        description: "Asistente virtual 24/7 para agendar citas vía WhatsApp.",
+        className: "col-span-3 lg:col-span-2",
         href: "#",
         cta: "Learn more",
-        className: "col-span-3 lg:col-span-2",
+        background: (
+            <Calendar
+                mode="single"
+                selected={new Date(2022, 4, 11, 0, 0, 0)}
+                className="absolute right-0 top-10 origin-top rounded-md border border-border transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_40%,#000_100%)] group-hover:scale-105"
+            />
+        ),
+    },
+    {
+        Icon: WaypointsIcon,
+        name: "Bots Personalizados",
+        description: "Bots conversacionales y automatizaciones a medida para tu negocio.",
+        href: "#",
+        cta: "Learn more",
+        className: "col-span-3 lg:col-span-2 max-w-full overflow-hidden",
+        background: (
+            <Integrations className="absolute right-2 pl-28 md:pl-0 top-4 h-[300px] w-[600px] border-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-105" />
+        ),
+    },
+    {
+        Icon: SearchIcon,
+        name: "Search your best links",
+        description: "Search your links",
+        href: "#",
+        cta: "Learn more",
+        className: "col-span-3 lg:col-span-1",
         background: (
             <Command className="absolute right-10 top-10 w-[70%] origin-to translate-x-0 border border-border transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_40%,#000_100%)] group-hover:-translate-x-10 p-2">
                 <Input placeholder="Type to search..." />
@@ -60,32 +86,6 @@ export const CARDS = [
                     <div className="px-4 py-2 hover:bg-muted rounded-md">linkify.io/sd8fv5</div>
                 </div>
             </Command>
-        ),
-    },
-    {
-        Icon: WaypointsIcon,
-        name: "Connect your apps",
-        description: "Integrate with your favorite apps and services.",
-        href: "#",
-        cta: "Learn more",
-        className: "col-span-3 lg:col-span-2 max-w-full overflow-hidden",
-        background: (
-            <Integrations className="absolute right-2 pl-28 md:pl-0 top-4 h-[300px] w-[600px] border-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-105" />
-        ),
-    },
-    {
-        Icon: CalendarIcon,
-        name: "Calendar",
-        description: "Keep track of your links with our calendar view.",
-        className: "col-span-3 lg:col-span-1",
-        href: "#",
-        cta: "Learn more",
-        background: (
-            <Calendar
-                mode="single"
-                selected={new Date(2022, 4, 11, 0, 0, 0)}
-                className="absolute right-0 top-10 origin-top rounded-md border border-border transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_40%,#000_100%)] group-hover:scale-105"
-            />
         ),
     },
 ];

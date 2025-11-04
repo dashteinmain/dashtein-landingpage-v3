@@ -27,30 +27,30 @@ const HomePage = () => {
                             <span className="backdrop absolute inset-[1px] rounded-full bg-card transition-colors duration-200 group-hover:bg-muted" />
                             <span className="h-full w-full blur-md absolute bottom-0 inset-x-0 bg-gradient-to-tr from-primary/20"></span>
                             <span className="z-10 py-0.5 text-sm text-foreground flex items-center justify-center gap-1">
-                                ✨ Manage links smarter
+                                ✨ Automatiza tu negocio con IA
                                 <ArrowRightIcon className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
                             </span>
                         </button>
                         <h1 className="text-foreground text-center py-6 text-5xl font-medium tracking-normal text-balance sm:text-6xl md:text-7xl lg:text-8xl !leading-[1.15] w-full font-heading">
-                            Smart Links with <span className="text-transparent bg-gradient-to-r from-primary to-primary-foreground bg-clip-text inline-bloc">
-                                Precision
+                            Transformación Digital con <span className="text-transparent bg-gradient-to-r from-primary to-primary-foreground bg-clip-text inline-bloc">
+                                Inteligencia Artificial
                             </span>
                         </h1>
                         <p className="mb-12 text-lg tracking-tight text-muted-foreground md:text-xl text-balance">
-                            Effortlessly streamline your link management with Linkify.
+                            Automatiza procesos, optimiza operaciones y multiplica tus resultados.
                             <br className="hidden md:block" />
-                            <span className="hidden md:block">Shorten, track, and organize all your links in one place.</span>
+                            <span className="hidden md:block">Reducción de tiempo, precisión y disponibilidad 24/7.</span>
                         </p>
                         <div className="flex items-center justify-center whitespace-nowrap gap-4 z-50">
                             <Button asChild>
                                 <Link href="/#contact" className="flex items-center">
-                                    Get in Touch
+                                    Contáctanos
                                     <ArrowRightIcon className="w-4 h-4 ml-2" />
                                 </Link>
                             </Button>
                             <Button asChild variant="outline">
                                 <Link href="/pricing" className="flex items-center">
-                                    View Pricing
+                                    Ver Precios
                                 </Link>
                             </Button>
                         </div>
@@ -85,7 +85,7 @@ const HomePage = () => {
                     <div className="py-14">
                         <div className="mx-auto px-4 md:px-8">
                             <h2 className="text-center text-sm font-medium font-heading text-muted-foreground uppercase">
-                                Trusted by the best in the industry
+                                Soluciones implementadas en
                             </h2>
                             <div className="mt-8">
                                 <ul className="flex flex-wrap items-center gap-x-6 gap-y-6 md:gap-x-16 justify-center">
@@ -112,12 +112,12 @@ const HomePage = () => {
             <MaxWidthWrapper className="pt-10">
                 <AnimationContainer delay={0.1}>
                     <div className="flex flex-col w-full items-center lg:items-center justify-center py-8">
-                        <MagicBadge title="Features" />
+                        <MagicBadge title="Soluciones" />
                         <h2 className="text-center lg:text-center text-3xl md:text-5xl !leading-[1.1] font-medium font-heading text-foreground mt-6">
-                            Manage Links Like a Pro
+                            Usa la IA a tu favor
                         </h2>
                         <p className="mt-4 text-center lg:text-center text-lg text-muted-foreground max-w-lg">
-                            Linkify is a powerful link management tool that helps you shorten, track, and organize all your links in one place.
+                            Transformamos tu visión en resultados medibles.
                         </p>
                     </div>
                 </AnimationContainer>
