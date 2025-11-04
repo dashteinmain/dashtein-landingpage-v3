@@ -134,9 +134,9 @@ const HomePage = () => {
             <MaxWidthWrapper className="py-10">
                 <AnimationContainer delay={0.1}>
                     <div className="flex flex-col items-center lg:items-center justify-center w-full py-8 max-w-xl mx-auto">
-                        <MagicBadge title="The Process" />
+                        <MagicBadge title="Nuestra Metodología" />
                         <h2 className="text-center lg:text-center text-3xl md:text-5xl !leading-[1.1] font-medium font-heading text-foreground mt-6">
-                            Effortless link management in 3 steps
+                            Procesos probados que garantizan el éxito de tu transformación digital
                         </h2>
                         <p className="mt-4 text-center lg:text-center text-lg text-muted-foreground max-w-lg">
                             Follow these simple steps to optimize, organize, and share your links with ease.
