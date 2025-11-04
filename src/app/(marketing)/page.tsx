@@ -20,19 +20,19 @@ const HomePage = () => {
             <MaxWidthWrapper>
                 <div className="flex flex-col items-center justify-center w-full text-center bg-gradient-to-t from-background">
                     <AnimationContainer className="flex flex-col items-center justify-center w-full text-center">
-                        <button className="group relative grid overflow-hidden rounded-full px-4 py-1 shadow-[0_1000px_0_0_hsl(0_0%_20%)_inset] transition-colors duration-200">
+                        <button className="group relative grid overflow-hidden rounded-full px-4 py-1 shadow-[0_1000px_0_0_hsl(var(--secondary))_inset] transition-colors duration-200">
                             <span>
-                                <span className="spark mask-gradient absolute inset-0 h-[100%] w-[100%] animate-flip overflow-hidden rounded-full [mask:linear-gradient(white,_transparent_50%)] before:absolute before:aspect-square before:w-[200%] before:rotate-[-90deg] before:animate-rotate before:bg-[conic-gradient(from_0deg,transparent_0_340deg,white_360deg)] before:content-[''] before:[inset:0_auto_auto_50%] before:[translate:-50%_-15%]" />
+                                <span className="spark mask-gradient absolute inset-0 h-[100%] w-[100%] animate-flip overflow-hidden rounded-full [mask:linear-gradient(white,_transparent_50%)] before:absolute before:aspect-square before:w-[200%] before:rotate-[-90deg] before:animate-rotate before:bg-[conic-gradient(from_0deg,transparent_0_340deg,hsl(var(--primary))_360deg)] before:content-[''] before:[inset:0_auto_auto_50%] before:[translate:-50%_-15%]" />
                             </span>
-                            <span className="backdrop absolute inset-[1px] rounded-full bg-neutral-950 transition-colors duration-200 group-hover:bg-neutral-900" />
+                            <span className="backdrop absolute inset-[1px] rounded-full bg-card transition-colors duration-200 group-hover:bg-muted" />
                             <span className="h-full w-full blur-md absolute bottom-0 inset-x-0 bg-gradient-to-tr from-primary/20"></span>
-                            <span className="z-10 py-0.5 text-sm text-neutral-100 flex items-center justify-center gap-1">
+                            <span className="z-10 py-0.5 text-sm text-foreground flex items-center justify-center gap-1">
                                 ✨ Manage links smarter
                                 <ArrowRightIcon className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
                             </span>
                         </button>
                         <h1 className="text-foreground text-center py-6 text-5xl font-medium tracking-normal text-balance sm:text-6xl md:text-7xl lg:text-8xl !leading-[1.15] w-full font-heading">
-                            Smart Links with <span className="text-transparent bg-gradient-to-r from-violet-500 to-fuchsia-500 bg-clip-text inline-bloc">
+                            Smart Links with <span className="text-transparent bg-gradient-to-r from-primary to-primary-foreground bg-clip-text inline-bloc">
                                 Precision
                             </span>
                         </h1>
@@ -84,7 +84,7 @@ const HomePage = () => {
                 <AnimationContainer delay={0.4}>
                     <div className="py-14">
                         <div className="mx-auto px-4 md:px-8">
-                            <h2 className="text-center text-sm font-medium font-heading text-neutral-400 uppercase">
+                            <h2 className="text-center text-sm font-medium font-heading text-muted-foreground uppercase">
                                 Trusted by the best in the industry
                             </h2>
                             <div className="mt-8">
@@ -229,7 +229,7 @@ const HomePage = () => {
                                         </CardContent>
                                         <CardFooter className="w-full space-x-1 mt-auto">
                                             {Array.from({ length: review.rating }, (_, i) => (
-                                                <StarIcon key={i} className="w-4 h-4 fill-yellow-500 text-yellow-500" />
+                                                <StarIcon key={i} className="w-4 h-4 fill-warning text-warning" />
                                             ))}
                                         </CardFooter>
                                     </Card>
@@ -257,7 +257,7 @@ const HomePage = () => {
                                         </CardContent>
                                         <CardFooter className="w-full space-x-1 mt-auto">
                                             {Array.from({ length: review.rating }, (_, i) => (
-                                                <StarIcon key={i} className="w-4 h-4 fill-yellow-500 text-yellow-500" />
+                                                <StarIcon key={i} className="w-4 h-4 fill-warning text-warning" />
                                             ))}
                                         </CardFooter>
                                     </Card>
@@ -285,7 +285,7 @@ const HomePage = () => {
                                         </CardContent>
                                         <CardFooter className="w-full space-x-1 mt-auto">
                                             {Array.from({ length: review.rating }, (_, i) => (
-                                                <StarIcon key={i} className="w-4 h-4 fill-yellow-500 text-yellow-500" />
+                                                <StarIcon key={i} className="w-4 h-4 fill-warning text-warning" />
                                             ))}
                                         </CardFooter>
                                     </Card>
@@ -301,7 +301,7 @@ const HomePage = () => {
                 <AnimationContainer delay={0.1}>
                     <LampContainer>
                         <div className="flex flex-col items-center justify-center relative w-full text-center">
-                            <h2 className="bg-gradient-to-b from-neutral-200 to-neutral-400 py-4 bg-clip-text text-center text-4xl md:text-7xl !leading-[1.15] font-medium font-heading tracking-tight text-transparent mt-8">
+                            <h2 className="bg-gradient-to-b from-foreground to-muted-foreground py-4 bg-clip-text text-center text-4xl md:text-7xl !leading-[1.15] font-medium font-heading tracking-tight text-transparent mt-8">
                                 Step into the future of link management
                             </h2>
                             <p className="text-muted-foreground mt-6 max-w-md mx-auto">
