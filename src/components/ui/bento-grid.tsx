@@ -2,7 +2,7 @@ import { buttonVariants } from "@/components/ui/button";
 import { Calendar } from "@/components/ui/calendar";
 import { Command, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList } from "@/components/ui/command";
 import { cn } from "@/utils";
-import { ArrowRightIcon, CalendarIcon, Link2Icon, SearchIcon, WaypointsIcon } from "lucide-react";
+import { ArrowRightIcon, CalendarIcon, Link2Icon, SearchIcon, WaypointsIcon, Receipt, BotMessageSquare, Monitor } from "lucide-react";
 import Link from "next/link";
 import { ReactNode } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./card";
@@ -12,80 +12,145 @@ import { Label } from "./label";
 
 export const CARDS = [
     {
-        Icon: Link2Icon,
-        name: "Shorten links",
-        description: "Create short links that are easy to remember and share.",
+        Icon: Receipt,
+        name: "FacturoBot",
+        description: "Automatiza el procesamiento de facturas vía WhatsApp con IA.",
         href: "#",
-        cta: "Learn more",
+        cta: "Conocer más",
         className: "col-span-3 lg:col-span-1",
         background: (
-            <Card className="absolute top-10 left-10 origin-top rounded-none rounded-tl-md transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_0%,#000_100%)] group-hover:scale-105 border border-border border-r-0">
-                <CardHeader>
-                    <CardTitle>
-                        Create short links
-                    </CardTitle>
-                    <CardDescription>
-                        Create short links that are easy to remember and share.
-                    </CardDescription>
-                </CardHeader>
-                <CardContent className="-mt-4">
-                    <Label>
-                        Paste your link
-                    </Label>
-                    <Input
-                        type="text"
-                        placeholder="Paste your link here..."
-                        className="w-full focus-visible:ring-0 focus-visible:ring-transparent"
-                    />
-                </CardContent>
-            </Card>
+            <div className="absolute top-10 left-10 w-[280px] origin-top rounded-lg border border-border bg-neutral-950 overflow-hidden transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_0%,#000_100%)] group-hover:scale-105">
+                <div className="bg-neutral-900 px-3 py-2 border-b border-border">
+                    <p className="text-xs text-neutral-400">Facturas recientes</p>
+                </div>
+                <div className="divide-y divide-border">
+                    <div className="px-3 py-2 flex justify-between items-center">
+                        <div>
+                            <p className="text-xs text-neutral-300 font-medium">ABC Corp</p>
+                            <p className="text-xs text-neutral-500">INV-001</p>
+                        </div>
+                        <span className="text-xs text-green-400">$1,500</span>
+                    </div>
+                    <div className="px-3 py-2 flex justify-between items-center">
+                        <div>
+                            <p className="text-xs text-neutral-300 font-medium">XYZ Ltd</p>
+                            <p className="text-xs text-neutral-500">INV-002</p>
+                        </div>
+                        <span className="text-xs text-green-400">$2,300</span>
+                    </div>
+                    <div className="px-3 py-2 flex justify-between items-center">
+                        <div>
+                            <p className="text-xs text-neutral-300 font-medium">Tech Co</p>
+                            <p className="text-xs text-neutral-500">INV-003</p>
+                        </div>
+                        <span className="text-xs text-green-400">$890</span>
+                    </div>
+                </div>
+            </div>
         ),
     },
     {
-        Icon: SearchIcon,
-        name: "Search your links",
-        description: "Quickly find the links you need with AI-powered search.",
+        Icon: CalendarIcon,
+        name: "AgendaBot",
+        description: "Asistente virtual 24/7 para agendar citas vía WhatsApp.",
+        className: "col-span-3 lg:col-span-1",
         href: "#",
-        cta: "Learn more",
-        className: "col-span-3 lg:col-span-2",
+        cta: "Conocer más",
         background: (
-            <Command className="absolute right-10 top-10 w-[70%] origin-to translate-x-0 border border-border transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_40%,#000_100%)] group-hover:-translate-x-10 p-2">
-                <Input placeholder="Type to search..." />
-                <div className="mt-1 cursor-pointer">
-                    <div className="px-4 py-2 hover:bg-muted rounded-md">linkify.io/hdf00c</div>
-                    <div className="px-4 py-2 hover:bg-muted rounded-md">linkify.io/sdv0n0</div>
-                    <div className="px-4 py-2 hover:bg-muted rounded-md">linkify.io/03gndo</div>
-                    <div className="px-4 py-2 hover:bg-muted rounded-md">linkify.io/09vmmw</div>
-                    <div className="px-4 py-2 hover:bg-muted rounded-md">linkify.io/s09vws</div>
-                    <div className="px-4 py-2 hover:bg-muted rounded-md">linkify.io/sd8fv5</div>
+            <div className="absolute left-10 top-10 w-[320px] origin-top rounded-lg border border-border bg-neutral-950 transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_20%,#000_100%)] group-hover:scale-105">
+                <div className="p-3 border-b border-border flex items-center gap-2">
+                    <div className="w-8 h-8 rounded-full bg-blue-500/20 flex items-center justify-center">
+                        <CalendarIcon className="w-4 h-4 text-blue-400" />
+                    </div>
+                    <span className="text-sm text-neutral-300">AgendaBot</span>
                 </div>
-            </Command>
+                <div className="p-3 space-y-2">
+                    <div className="bg-neutral-800 rounded-lg p-2 max-w-[85%]">
+                        <p className="text-xs text-neutral-300">¡Hola! ¿Para cuándo te gustaría agendar tu cita?</p>
+                    </div>
+                    <div className="bg-green-500/10 rounded-lg p-2 max-w-[85%] ml-auto text-right">
+                        <p className="text-xs text-neutral-300">Mañana por la tarde</p>
+                    </div>
+                    <div className="bg-neutral-800 rounded-lg p-2 max-w-[85%]">
+                        <p className="text-xs text-neutral-300">Perfecto! Tengo disponible:</p>
+                        <div className="mt-2 space-y-1">
+                            <div className="bg-neutral-700 rounded px-2 py-1">
+                                <p className="text-xs text-neutral-200">📅 Mañana 3:00 PM</p>
+                            </div>
+                            <div className="bg-neutral-700 rounded px-2 py-1">
+                                <p className="text-xs text-neutral-200">📅 Mañana 5:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        ),
+    },
+    {
+        Icon: BotMessageSquare,
+        name: "AtenBot",
+        description: "Asistente virtual 24/7 para atención al cliente vía WhatsApp.",
+        className: "col-span-3 lg:col-span-1",
+        href: "#",
+        cta: "Conocer más",
+        background: (
+            <div className="absolute left-10 top-10 w-[320px] origin-top rounded-lg border border-border bg-neutral-950 transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_20%,#000_100%)] group-hover:scale-105">
+                <div className="p-3 border-b border-border flex items-center gap-2">
+                    <div className="w-8 h-8 rounded-full bg-blue-500/20 flex items-center justify-center">
+                        <BotMessageSquare className="w-4 h-4 text-blue-400" />
+                    </div>
+                    <span className="text-sm text-neutral-300">AtenBot</span>
+                </div>
+                <div className="p-3 space-y-2">
+                    <div className="bg-neutral-800 rounded-lg p-2 max-w-[85%]">
+                        <p className="text-xs text-neutral-300">¡Hola! ¿Para cuándo te gustaría agendar tu cita?</p>
+                    </div>
+                    <div className="bg-green-500/10 rounded-lg p-2 max-w-[85%] ml-auto text-right">
+                        <p className="text-xs text-neutral-300">Mañana por la tarde</p>
+                    </div>
+                    <div className="bg-neutral-800 rounded-lg p-2 max-w-[85%]">
+                        <p className="text-xs text-neutral-300">Perfecto! Tengo disponible:</p>
+                        <div className="mt-2 space-y-1">
+                            <div className="bg-neutral-700 rounded px-2 py-1">
+                                <p className="text-xs text-neutral-200">📅 Mañana 3:00 PM</p>
+                            </div>
+                            <div className="bg-neutral-700 rounded px-2 py-1">
+                                <p className="text-xs text-neutral-200">📅 Mañana 5:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         ),
     },
     {
         Icon: WaypointsIcon,
-        name: "Connect your apps",
-        description: "Integrate with your favorite apps and services.",
+        name: "Bots Personalizados",
+        description: "Bots conversacionales y automatizaciones a medida para tu negocio.",
         href: "#",
-        cta: "Learn more",
+        cta: "Conocer más",
         className: "col-span-3 lg:col-span-2 max-w-full overflow-hidden",
         background: (
             <Integrations className="absolute right-2 pl-28 md:pl-0 top-4 h-[300px] w-[600px] border-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-105" />
         ),
     },
     {
-        Icon: CalendarIcon,
-        name: "Calendar",
-        description: "Keep track of your links with our calendar view.",
-        className: "col-span-3 lg:col-span-1",
+        Icon: Monitor,
+        name: "Software a Medida",
+        description: "Hagamos realidad el software de tus sueños.",
         href: "#",
-        cta: "Learn more",
+        cta: "Conocer más",
+        className: "col-span-3 lg:col-span-1",
         background: (
-            <Calendar
-                mode="single"
-                selected={new Date(2022, 4, 11, 0, 0, 0)}
-                className="absolute right-0 top-10 origin-top rounded-md border border-border transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_40%,#000_100%)] group-hover:scale-105"
-            />
+            <Command className="absolute right-10 top-4 w-[70%] origin-to translate-x-0 border border-border transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_40%,#000_100%)] group-hover:-translate-x-10 p-2">
+                <Input placeholder="Escribe tu necesidad..." />
+                <div className="mt-1 cursor-pointer">
+                    <div className="px-4 py-2 hover:bg-muted rounded-md">Desarrollo</div>
+                    <div className="px-4 py-2 hover:bg-muted rounded-md">DevOps</div>
+                    <div className="px-4 py-2 hover:bg-muted rounded-md">ERP</div>
+                    <div className="px-4 py-2 hover:bg-muted rounded-md">CRM</div>
+                </div>
+            </Command>
         ),
     },
 ];
