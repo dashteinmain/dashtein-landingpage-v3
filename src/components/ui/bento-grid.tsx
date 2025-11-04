@@ -19,26 +19,34 @@ export const CARDS = [
         cta: "Learn more",
         className: "col-span-3 lg:col-span-1",
         background: (
-            <Card className="absolute top-10 left-10 origin-top rounded-none rounded-tl-md transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_0%,#000_100%)] group-hover:scale-105 border border-border border-r-0">
-                <CardHeader>
-                    <CardTitle>
-                        Create short links
-                    </CardTitle>
-                    <CardDescription>
-                        Create short links that are easy to remember and share.
-                    </CardDescription>
-                </CardHeader>
-                <CardContent className="-mt-4">
-                    <Label>
-                        Paste your link
-                    </Label>
-                    <Input
-                        type="text"
-                        placeholder="Paste your link here..."
-                        className="w-full focus-visible:ring-0 focus-visible:ring-transparent"
-                    />
-                </CardContent>
-            </Card>
+            <div className="absolute top-10 left-10 w-[280px] origin-top rounded-lg border border-border bg-neutral-950 overflow-hidden transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_0%,#000_100%)] group-hover:scale-105">
+                <div className="bg-neutral-900 px-3 py-2 border-b border-border">
+                    <p className="text-xs text-neutral-400">Facturas recientes</p>
+                </div>
+                <div className="divide-y divide-border">
+                    <div className="px-3 py-2 flex justify-between items-center">
+                        <div>
+                            <p className="text-xs text-neutral-300 font-medium">ABC Corp</p>
+                            <p className="text-xs text-neutral-500">INV-001</p>
+                        </div>
+                        <span className="text-xs text-green-400">$1,500</span>
+                    </div>
+                    <div className="px-3 py-2 flex justify-between items-center">
+                        <div>
+                            <p className="text-xs text-neutral-300 font-medium">XYZ Ltd</p>
+                            <p className="text-xs text-neutral-500">INV-002</p>
+                        </div>
+                        <span className="text-xs text-green-400">$2,300</span>
+                    </div>
+                    <div className="px-3 py-2 flex justify-between items-center">
+                        <div>
+                            <p className="text-xs text-neutral-300 font-medium">Tech Co</p>
+                            <p className="text-xs text-neutral-500">INV-003</p>
+                        </div>
+                        <span className="text-xs text-green-400">$890</span>
+                    </div>
+                </div>
+            </div>
         ),
     },
     {
