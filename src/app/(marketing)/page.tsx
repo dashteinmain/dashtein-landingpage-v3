@@ -8,14 +8,11 @@ import MagicBadge from "@/components/ui/magic-badge";
 import MagicCard from "@/components/ui/magic-card";
 import { COMPANIES, PROCESS } from "@/utils";
 import { REVIEWS } from "@/utils/constants/misc";
-import { currentUser } from "@clerk/nextjs/server";
 import { ArrowRightIcon, CreditCardIcon, StarIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
-const HomePage = async () => {
-
-    const user = await currentUser();
+const HomePage = () => {
 
     return (
         <div className="overflow-x-hidden scrollbar-hide size-full">
@@ -46,9 +43,14 @@ const HomePage = async () => {
                         </p>
                         <div className="flex items-center justify-center whitespace-nowrap gap-4 z-50">
                             <Button asChild>
-                                <Link href={user ? "/dashboard" : "/auth/sign-in"} className="flex items-center">
-                                    Start creating for free
+                                <Link href="/#contact" className="flex items-center">
+                                    Get in Touch
                                     <ArrowRightIcon className="w-4 h-4 ml-2" />
+                                </Link>
+                            </Button>
+                            <Button asChild variant="outline">
+                                <Link href="/pricing" className="flex items-center">
+                                    View Pricing
                                 </Link>
                             </Button>
                         </div>
