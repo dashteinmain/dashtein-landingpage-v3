@@ -1,29 +1,30 @@
-import { clerkMiddleware } from "@clerk/nextjs/server";
-import { NextResponse } from "next/server";
+import { clerkMiddleware, createRouteMatcher } from "@clerk/nextjs/server";
 
-export default clerkMiddleware((auth, req) => {
-    const url = req.nextUrl.pathname;
+// Define las rutas PÚBLICAS (que NO necesitan auth)
+const isPublicRoute = createRouteMatcher([
+    '/',
+    '/features(.*)',
+    '/pricing',
+    '/changelog',
+    '/enterprise',
+    '/privacy',
+    '/terms',
+    '/resources(.*)',
+    '/auth/sign-in(.*)',
+    '/auth/sign-up(.*)',
+    '/api(.*)',
+]);
 
-    const { userId } = auth();
-
-    // Protect /dashboard and sub-routes
-    if (!userId && url.startsWith("/dashboard")) {
-        return NextResponse.redirect(new URL("/auth/sign-in", req.url));
-    }
-
-    // Redirect authenticated users away from auth routes
-    if (userId && (url.startsWith("/auth/sign-in") || url.startsWith("/auth/sign-up"))) {
-        return NextResponse.redirect(new URL("/dashboard", req.url));
+export default clerkMiddleware((auth, request) => {
+    // Si NO es ruta pública, proteger con auth
+    if (!isPublicRoute(request)) {
+        auth().protect();
     }
 });
 
 export const config = {
     matcher: [
-        "/((?!.*\\..*|_next).*)",
-        "/(api|trpc)(.*)",
-        "/dashboard(.*)",
-        "/",
-        "/auth/sign-in",
-        "/auth/sign-up",
+        '/((?!_next|[^?]*\\.(?:html?|css|js(?!on)|jpe?g|webp|png|gif|svg|ttf|woff2?|ico|csv|docx?|xlsx?|zip|webmanifest)).*)',
+        '/(api|trpc)(.*)',
     ],
 };
