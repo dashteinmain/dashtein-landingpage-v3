@@ -1,39 +1,39 @@
-import { HelpCircleIcon, LineChartIcon, Link2Icon, LockIcon, NewspaperIcon, QrCodeIcon } from "lucide-react";
+import { HelpCircleIcon, LineChartIcon, LockIcon, NewspaperIcon, QrCodeIcon, Receipt } from "lucide-react";
 
 export const NAV_LINKS = [
     {
-        title: "Features",
-        href: "/features",
+        title: "Soluciones",
+        href: "/#soluciones",
         menu: [
             {
-                title: "Link Shortening",
-                tagline: "Shorten links and track their performance.",
-                href: "/features/link-shortening",
-                icon: Link2Icon,
+                title: "FacturoBot",
+                tagline: "Procesa facturas automáticamente.",
+                href: "/soluciones/facturobot",
+                icon: Receipt,
             },
             {
                 title: "Password Protection",
                 tagline: "Secure your links with a password.",
-                href: "/features/password-protection",
+                href: "/soluciones/password-protection",
                 icon: LockIcon,
             },
             {
                 title: "Advanced Analytics",
                 tagline: "Gain insights into who is clicking your links.",
-                href: "/features/analytics",
+                href: "/soluciones/analytics",
                 icon: LineChartIcon,
             },
             {
                 title: "Custom QR Codes",
                 tagline: "Use QR codes to reach your audience.",
-                href: "/features/qr-codes",
+                href: "/soluciones/qr-codes",
                 icon: QrCodeIcon,
             },
         ],
     },
     {
-        title: "Pricing",
-        href: "/pricing",
+        title: "Precios",
+        href: "/precios",
     },
     {
         title: "Enterprise",

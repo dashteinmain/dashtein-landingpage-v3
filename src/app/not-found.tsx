@@ -15,18 +15,18 @@ const NotFound = () => {
                         404
                     </span>
                     <h1 className="text-3xl md:text-5xl font-bold text-foreground mt-5">
-                        Not Found
+                        No encontrado
                     </h1>
                     <p className="text-base text-muted-foreground font-medium mt-5 text-center mx-auto max-w-xl">
-                        The page you are looking for does not exist. <br /> But don&apos;t worry, we&apos;ve got you covered. You can{" "}
+                        La página que estás buscando no existe. <br /> Pero no te preocupes, te tenemos cubierto. Puedes{" "}
                         <Link href="/resources/help" className="text-foreground">
-                            contact us
+                            contactarnos
                         </Link>
                         .
                     </p>
                     <Link href="/">
                         <Button className="mt-8">
-                            Back to homepage
+                            Regresar al Inicio
                         </Button>
                     </Link>
                 </div>
