@@ -171,12 +171,12 @@ const HomePage = () => {
             <MaxWidthWrapper className="py-10">
                 <AnimationContainer delay={0.1}>
                     <div className="flex flex-col items-center lg:items-center justify-center w-full py-8 max-w-xl mx-auto">
-                        <MagicBadge title="Simple Pricing" />
+                        <MagicBadge title="Precios Accesibles" />
                         <h2 className="text-center lg:text-center text-3xl md:text-5xl !leading-[1.1] font-medium font-heading text-foreground mt-6">
-                            Choose a plan that works for you
+                            Escoge el plan que se adapate a tu negocio
                         </h2>
                         <p className="mt-4 text-center lg:text-center text-lg text-muted-foreground max-w-lg">
-                            Get started with Linkify today and enjoy more features with our pro plans.
+                            Puedes probar nuestros servicios y seguir creciendo con otros planes.
                         </p>
                     </div>
                 </AnimationContainer>
@@ -188,7 +188,7 @@ const HomePage = () => {
                         <div className="flex items-center gap-2">
                             <CreditCardIcon className="w-5 h-5 text-foreground" />
                             <span className="text-muted-foreground">
-                                No credit card required
+                                Las pruebas no requieren pagos
                             </span>
                         </div>
                     </div>

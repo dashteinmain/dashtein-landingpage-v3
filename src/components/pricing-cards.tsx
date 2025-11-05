@@ -37,7 +37,7 @@ const PricingCards = () => {
                         />
                     )}
                     <span className="z-20">
-                        Monthly
+                        Mensual
                     </span>
                 </MotionTabTrigger>
                 <MotionTabTrigger
@@ -56,7 +56,7 @@ const PricingCards = () => {
                         />
                     )}
                     <span className="z-20">
-                        Yearly
+                        Anual
                     </span>
                 </MotionTabTrigger>
             </TabsList>
@@ -67,14 +67,14 @@ const PricingCards = () => {
                         key={plan.name}
                         className={cn(
                             "flex flex-col w-full border-border rounded-xl",
-                            plan.name === "Pro" && "border-2 border-primary"
+                            plan.name === "AtenBot" && "border-2 border-primary"
                         )}
                     >
                         <CardHeader className={cn(
                             "border-b border-border",
-                            plan.name === "Pro" ? "bg-primary/[0.07]" : "bg-foreground/[0.03]"
+                            plan.name === "AtenBot" ? "bg-primary/[0.07]" : "bg-foreground/[0.03]"
                         )}>
-                            <CardTitle className={cn(plan.name !== "Pro" && "text-muted-foreground", "text-lg font-medium")}>
+                            <CardTitle className={cn(plan.name !== "AtenBot" && "text-muted-foreground", "text-lg font-medium")}>
                                 {plan.name}
                             </CardTitle>
                             <CardDescription>
@@ -83,7 +83,7 @@ const PricingCards = () => {
                             <h5 className="text-3xl font-semibold">
                                 ${plan.price.monthly}
                                 <span className="text-base text-muted-foreground font-normal">
-                                    {plan.name !== "Free" ? "/month" : ""}
+                                    {plan.name !== "Free" ? "/mes" : ""}
                                 </span>
                             </h5>
                         </CardHeader>
@@ -111,9 +111,10 @@ const PricingCards = () => {
                         <CardFooter className="w-full mt-auto">
                             <Link
                                 href={plan.btn.href}
+                                target="_blank"
                                 style={{ width: "100%" }}
                                 className={buttonVariants({
-                                    className: plan.name === "Pro"
+                                    className: plan.name === "AtenBot"
                                         ? "bg-primary hover:bg-primary/80 text-primary-foreground"
                                         : "bg-primary/60 hover:bg-primary/50 text-primary-foreground"
                                 })}
@@ -130,14 +131,14 @@ const PricingCards = () => {
                         key={plan.name}
                         className={cn(
                             "flex flex-col w-full border-border rounded-xl",
-                            plan.name === "Pro" && "border-2 border-primary"
+                            plan.name === "AtenBot" && "border-2 border-primary"
                         )}
                     >
                         <CardHeader className={cn(
                             "border-b border-border",
-                            plan.name === "Pro" ? "bg-primary/[0.07]" : "bg-foreground/[0.03]"
+                            plan.name === "AtenBot" ? "bg-primary/[0.07]" : "bg-foreground/[0.03]"
                         )}>
-                            <CardTitle className={cn(plan.name !== "Pro" && "text-muted-foreground", "text-lg font-medium")}>
+                            <CardTitle className={cn(plan.name !== "AtenBot" && "text-muted-foreground", "text-lg font-medium")}>
                                 {plan.name}
                             </CardTitle>
                             <CardDescription>
@@ -146,7 +147,7 @@ const PricingCards = () => {
                             <h5 className="text-3xl font-semibold flex items-end">
                                 ${plan.price.yearly}
                                 <div className="text-base text-muted-foreground font-normal">
-                                    {plan.name !== "Free" ? "/year" : ""}
+                                    {plan.name !== "Free" ? "/año" : ""}
                                 </div>
                                 {plan.name !== "Free" && (
                                     <motion.span
@@ -185,9 +186,10 @@ const PricingCards = () => {
                         <CardFooter className="w-full pt- mt-auto">
                             <Link
                                 href={plan.btn.href}
+                                target="_blank"
                                 style={{ width: "100%" }}
                                 className={buttonVariants({
-                                    className: plan.name === "Pro"
+                                    className: plan.name === "AtenBot"
                                         ? "bg-primary hover:bg-primary/80 text-primary-foreground"
                                         : "bg-primary/60 hover:bg-primary/50 text-primary-foreground"
                                 })}
