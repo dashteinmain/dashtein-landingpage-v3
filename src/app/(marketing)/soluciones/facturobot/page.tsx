@@ -27,7 +27,7 @@ const LinkShorteningPage = () => {
                                 </Link>
                             </Button>
                             <Button size="sm" variant="outline" asChild>
-                                <Link href="/pricing">
+                                <Link href="/precios">
                                     Ver Precios
                                 </Link>
                             </Button>

@@ -32,8 +32,8 @@ export const NAV_LINKS = [
         ],
     },
     {
-        title: "Pricing",
-        href: "/pricing",
+        title: "Precios",
+        href: "/precios",
     },
     {
         title: "Enterprise",

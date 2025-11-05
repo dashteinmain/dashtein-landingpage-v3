@@ -49,7 +49,7 @@ const HomePage = () => {
                                 </Link>
                             </Button>
                             <Button asChild variant="outline">
-                                <Link href="/pricing" className="flex items-center">
+                                <Link href="/precios" className="flex items-center">
                                     Ver Precios
                                 </Link>
                             </Button>
@@ -199,6 +199,8 @@ const HomePage = () => {
 
             {/* Reviews Section */}
             <MaxWidthWrapper className="py-10">
+                {/* Anchor invisible con offset */}
+                <div id="testimonios" className="relative -top-20" />
                 <AnimationContainer delay={0.1}>
                     <div className="flex flex-col items-center lg:items-center justify-center w-full py-8 max-w-xl mx-auto">
                         <MagicBadge title="Nuestros Clientes" />

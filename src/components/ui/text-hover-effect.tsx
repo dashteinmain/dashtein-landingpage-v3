@@ -28,17 +28,17 @@ export const TextHoverEffect = ({
     }, [cursor]);
 
     return (
-        <svg
-            ref={svgRef}
-            width="100%"
-            height="100%"
-            viewBox="0 0 300 100"
-            xmlns="http://www.w3.org/2000/svg"
-            onMouseEnter={() => setHovered(true)}
-            onMouseLeave={() => setHovered(false)}
-            onMouseMove={(e) => setCursor({ x: e.clientX, y: e.clientY })}
-            className="select-none"
-        >
+            <svg
+                ref={svgRef}
+                width="100%"
+                height="100%"
+                viewBox="0 0 400 100"  // Aumenta de 300 a 400 o más
+                xmlns="http://www.w3.org/2000/svg"
+                onMouseEnter={() => setHovered(true)}
+                onMouseLeave={() => setHovered(false)}
+                onMouseMove={(e) => setCursor({ x: e.clientX, y: e.clientY })}
+                className="select-none"
+            >
             <defs>
                 <linearGradient
                     id="textGradient"
@@ -49,11 +49,11 @@ export const TextHoverEffect = ({
                 >
                     {hovered && (
                         <>
-                            <stop offset="0%" stopColor={"var(--indigo-500)"} />
-                            <stop offset="25%" stopColor={"var(--violet-500)"} />
-                            <stop offset="50%" stopColor={"var(--purple-500)"} />
-                            <stop offset="75%" stopColor={"var(--fuchsia-500)"} />
-                            <stop offset="100%" stopColor={"var(--rose-500)"} />
+                            <stop offset="0%" stopColor={"hsl(210, 100%, 70%)"} />
+                            <stop offset="25%" stopColor={"hsl(210, 100%, 60%)"} />
+                            <stop offset="50%" stopColor={"hsl(210, 100%, 56%)"} />
+                            <stop offset="75%" stopColor={"hsl(210, 90%, 50%)"} />
+                            <stop offset="100%" stopColor={"hsl(210, 80%, 45%)"} />
                         </>
                     )}
                 </linearGradient>

@@ -110,7 +110,7 @@ const Navbar = () => {
 
                     <div className="hidden lg:flex items-center">
                         <div className="flex items-center gap-x-4">
-                            <Link href="/pricing" className={buttonVariants({ size: "sm", variant: "ghost" })}>
+                            <Link href="/precios" className={buttonVariants({ size: "sm", variant: "ghost" })}>
                                 Precios
                             </Link>
                             <Link href="/#contact" className={buttonVariants({ size: "sm" })}>
