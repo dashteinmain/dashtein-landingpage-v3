@@ -103,13 +103,13 @@ export const CARDS = [
                 </div>
                 <div className="p-3 space-y-2">
                     <div className="bg-neutral-800 rounded-lg p-2 max-w-[85%]">
-                        <p className="text-xs text-neutral-300">¡Hola! ¿Para cuándo te gustaría agendar tu cita?</p>
+                        <p className="text-xs text-neutral-300">¡Hola! ¿Cómo puedo ayudarte?</p>
                     </div>
                     <div className="bg-green-500/10 rounded-lg p-2 max-w-[85%] ml-auto text-right">
-                        <p className="text-xs text-neutral-300">Mañana por la tarde</p>
+                        <p className="text-xs text-neutral-300">¿Cual es su horario y donde están ubicados?</p>
                     </div>
                     <div className="bg-neutral-800 rounded-lg p-2 max-w-[85%]">
-                        <p className="text-xs text-neutral-300">Perfecto! Tengo disponible:</p>
+                        <p className="text-xs text-neutral-300">Estamos ubicados en San francisco, al lado del centro comercial</p>
                         <div className="mt-2 space-y-1">
                             <div className="bg-neutral-700 rounded px-2 py-1">
                                 <p className="text-xs text-neutral-200">📅 Mañana 3:00 PM</p>
