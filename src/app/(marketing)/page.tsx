@@ -110,6 +110,8 @@ const HomePage = () => {
 
             {/* Features Section */}
             <MaxWidthWrapper className="pt-10">
+                {/* Anchor invisible con offset */}
+                <div id="soluciones" className="relative -top-20" />
                 <AnimationContainer delay={0.1}>
                     <div className="flex flex-col w-full items-center lg:items-center justify-center py-8">
                         <MagicBadge title="Soluciones" />
@@ -244,14 +246,14 @@ const HomePage = () => {
                     <LampContainer>
                         <div className="flex flex-col items-center justify-center relative w-full text-center">
                             <h2 className="bg-gradient-to-b from-foreground to-muted-foreground py-4 bg-clip-text text-center text-4xl md:text-7xl !leading-[1.15] font-medium font-heading tracking-tight text-transparent mt-8">
-                                Step into the future of link management
+                                ¿Listo para transformar tu organización?
                             </h2>
                             <p className="text-muted-foreground mt-6 max-w-md mx-auto">
-                                Experience the cutting-edge solution that transforms how you handle your links. Elevate your online presence with our next-gen platform.
+                                Descubre cómo la inteligencia artificial puede multiplicar tu productividad y reducir costos operativos. Automatiza lo repetitivo, enfócate en crecer.
                             </p>
                             <div className="mt-6">
                                 <Button>
-                                    Get started for free
+                                    Agenda tu Consulta Gratuita
                                     <ArrowRightIcon className="w-4 h-4 ml-2" />
                                 </Button>
                             </div>

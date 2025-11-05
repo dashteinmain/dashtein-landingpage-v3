@@ -45,9 +45,9 @@ const Navbar = () => {
             <AnimationContainer reverse delay={0.1} className="size-full">
                 <MaxWidthWrapper className="flex items-center justify-between">
                     <div className="flex items-center space-x-12">
-                        <Link href="/#home">
+                        <Link href="/#inicio">
                             <span className="text-lg font-bold font-heading !leading-none">
-                                Linkify
+                                Dashtein.
                             </span>
                         </Link>
 
@@ -61,21 +61,21 @@ const Navbar = () => {
                                                 <NavigationMenuContent>
                                                     <ul className={cn(
                                                         "grid gap-1 p-4 md:w-[400px] lg:w-[500px] rounded-xl",
-                                                        link.title === "Features" ? "lg:grid-cols-[.75fr_1fr]" : "lg:grid-cols-2"
+                                                        link.title === "Soluciones" ? "lg:grid-cols-[.75fr_1fr]" : "lg:grid-cols-2"
                                                     )}>
-                                                        {link.title === "Features" && (
+                                                        {link.title === "Soluciones" && (
                                                             <li className="row-span-4 pr-2 relative rounded-lg overflow-hidden">
                                                                 <div className="absolute inset-0 !z-10 h-full w-[calc(100%-10px)] bg-[linear-gradient(to_right,rgb(38,38,38,0.5)_1px,transparent_1px),linear-gradient(to_bottom,rgb(38,38,38,0.5)_1px,transparent_1px)] bg-[size:1rem_1rem]"></div>
                                                                 <NavigationMenuLink asChild className="z-20 relative">
                                                                     <Link
-                                                                        href="/"
+                                                                        href="/#soluciones"
                                                                         className="flex h-full w-full select-none flex-col justify-end rounded-lg bg-gradient-to-b from-muted/50 to-muted p-4 no-underline outline-none focus:shadow-md"
                                                                     >
                                                                         <h6 className="mb-2 mt-4 text-lg font-medium">
-                                                                            All Features
+                                                                            Todas las Soluciones
                                                                         </h6>
                                                                         <p className="text-sm leading-tight text-muted-foreground">
-                                                                            Manage links, track performance, and more.
+                                                                            Procesa facturas, atiende clientes y más.
                                                                         </p>
                                                                     </Link>
                                                                 </NavigationMenuLink>
@@ -111,10 +111,10 @@ const Navbar = () => {
                     <div className="hidden lg:flex items-center">
                         <div className="flex items-center gap-x-4">
                             <Link href="/pricing" className={buttonVariants({ size: "sm", variant: "ghost" })}>
-                                Pricing
+                                Precios
                             </Link>
                             <Link href="/#contact" className={buttonVariants({ size: "sm" })}>
-                                Contact Us
+                                Contáctanos
                             </Link>
                         </div>
                     </div>
