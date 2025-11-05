@@ -139,7 +139,7 @@ const HomePage = () => {
                             Procesos probados que garantizan el éxito de tu transformación digital
                         </h2>
                         <p className="mt-4 text-center lg:text-center text-lg text-muted-foreground max-w-lg">
-                            Follow these simple steps to optimize, organize, and share your links with ease.
+                            Nos encargamos de mejorar tu experiencia con el software.
                         </p>
                     </div>
                 </AnimationContainer>
