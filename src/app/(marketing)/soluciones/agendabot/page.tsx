@@ -7,28 +7,28 @@ import { ArrowRightIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
-const AnalyticsPage = () => {
+const LinkShorteningPage = () => {
     return (
         <>
             <MaxWidthWrapper>
                 <AnimationContainer delay={0.1} className="w-full">
                     <div className="flex flex-col items-center justify-center py-10 max-w-lg mx-auto">
-                        <MagicBadge title="New" />
+                        <MagicBadge title="Preciso" />
                         <h1 className="text-2xl md:text-4xl lg:text-5xl font-semibold font-heading text-center mt-6 !leading-tight">
-                            Advanced analytics for your business
+                            Agenda tus citas como un PRO
                         </h1>
                         <p className="text-base md:text-lg mt-6 text-center text-muted-foreground">
-                            Gain deep insights into your link performance with real-time analytics. Track clicks, device usage, and more to optimize your strategy.
+                            Asistente virtual 24/7 que atiende a tus clientes para agendar sus citas.
                         </p>
                         <div className="flex items-center justify-center gap-x-4 mt-8">
                             <Button size="sm" asChild>
-                                <Link href="/dashboard">
-                                    Get started
+                                <Link href="https://api.whatsapp.com/send?phone=50764523183&text=Estoy%20interesado%20en%20AgendaBot!%20Necesito%20m%C3%A1s%20informaci%C3%B3n%2C%20por%20favor." target="_blank">
+                                    Empezar Ahora
                                 </Link>
                             </Button>
                             <Button size="sm" variant="outline" asChild>
-                                <Link href="/blog">
-                                    Learn more
+                                <Link href="/precios">
+                                    Ver Precios
                                 </Link>
                             </Button>
                         </div>
@@ -37,8 +37,8 @@ const AnalyticsPage = () => {
                 <AnimationContainer delay={0.2} className="w-full">
                     <div className="w-full flex max-w-4xl py-10 mx-auto">
                         <Image
-                            src="/assets/analytics.svg"
-                            alt="Advanced analytics for your business"
+                            src="/assets/password-protection.svg"
+                            alt="Protect your links with a password"
                             width={80}
                             height={80}
                             className="w-full h-auto"
@@ -97,4 +97,4 @@ const AnalyticsPage = () => {
     )
 };
 
-export default AnalyticsPage
+export default LinkShorteningPage
