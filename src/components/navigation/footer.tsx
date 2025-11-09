@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { AnimationContainer, Icons } from "@/components"
+import { AnimationContainer } from "@/components"
 import { TextHoverEffect } from "@/components/ui/text-hover-effect"
 
 const Footer = () => {
@@ -13,7 +13,11 @@ const Footer = () => {
                 <AnimationContainer delay={0.1}>
                     <div className="flex flex-col items-start justify-start md:max-w-[200px]">
                         <div className="flex items-start">
-                            <Icons.logo className="w-7 h-7" />
+                            <img 
+                            src="/icons/logo.svg" 
+                            alt="Logo" 
+                            className="w-7 h-7"
+                            />
                         </div>
                         <p className="text-muted-foreground mt-4 text-sm text-start">
                             Aumenta tu productividad sin contratar más personal.

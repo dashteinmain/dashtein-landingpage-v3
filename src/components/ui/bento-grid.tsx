@@ -15,7 +15,7 @@ export const CARDS = [
         Icon: Receipt,
         name: "FacturoBot",
         description: "Automatiza el procesamiento de facturas vía WhatsApp con IA.",
-        href: "#",
+        href: "/soluciones/facturobot",
         cta: "Conocer más",
         className: "col-span-3 lg:col-span-1",
         background: (
