@@ -38,7 +38,7 @@ const LinkShorteningPage = () => {
                     <div className="w-full flex max-w-4xl py-10 mx-auto">
                         <Image
                             src="/assets/facturobot.svg"
-                            alt="Shorten links and track their performance"
+                            alt="Procesa facturas en segundos"
                             width={80}
                             height={80}
                             className="w-full h-auto"

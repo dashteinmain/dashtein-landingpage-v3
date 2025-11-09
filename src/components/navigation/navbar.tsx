@@ -47,7 +47,7 @@ const Navbar = () => {
                     <div className="flex items-center space-x-12">
                         <Link href="/#inicio">
                             <span className="text-lg font-bold font-heading !leading-none">
-                                Dashtein.
+                                dashtein.
                             </span>
                         </Link>
 

@@ -13,17 +13,17 @@ const LinkShorteningPage = () => {
             <MaxWidthWrapper>
                 <AnimationContainer delay={0.1} className="w-full">
                     <div className="flex flex-col items-center justify-center py-10 max-w-lg mx-auto">
-                        <MagicBadge title="Unique" />
+                        <MagicBadge title="Únicos" />
                         <h1 className="text-2xl md:text-4xl lg:text-5xl font-semibold font-heading text-center mt-6 !leading-tight">
-                            Create QR codes for your links
+                            Crea automatizaciones Únicas para tu negocio.
                         </h1>
                         <p className="text-base md:text-lg mt-6 text-center text-muted-foreground">
-                            Enhance your marketing strategy with custom QR codes. Drive engagement and track performance with ease.
+                            Aumenta tu productividad sin contratar más personal.
                         </p>
                         <div className="flex items-center justify-center gap-x-4 mt-8">
                             <Button size="sm" asChild>
-                                <Link href="/#contact">
-                                    Get started
+                                <Link href="https://api.whatsapp.com/send?phone=50764523183&text=Estoy%20interesado%20en%20Software%20a%20Medida!%20Necesito%20m%C3%A1s%20informaci%C3%B3n%2C%20por%20favor.">
+                                    Empezar Ahora
                                 </Link>
                             </Button>
                             <Button size="sm" variant="outline" asChild>

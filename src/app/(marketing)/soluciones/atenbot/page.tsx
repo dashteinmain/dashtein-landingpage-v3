@@ -7,23 +7,23 @@ import { ArrowRightIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
-const LinkShorteningPage = () => {
+const AnalyticsPage = () => {
     return (
         <>
             <MaxWidthWrapper>
                 <AnimationContainer delay={0.1} className="w-full">
                     <div className="flex flex-col items-center justify-center py-10 max-w-lg mx-auto">
-                        <MagicBadge title="Secure" />
+                        <MagicBadge title="Eficiente" />
                         <h1 className="text-2xl md:text-4xl lg:text-5xl font-semibold font-heading text-center mt-6 !leading-tight">
-                            Frotify your links with a password
+                            Atiende tus clientes con Eficiencia
                         </h1>
                         <p className="text-base md:text-lg mt-6 text-center text-muted-foreground">
-                            Safeguard sensitive information with robust password protection, providing peace of mind and enhanced security.
+                            No pierdas más clientes por no saber multiplicarte para responder todos los mensajes 🥲.
                         </p>
                         <div className="flex items-center justify-center gap-x-4 mt-8">
                             <Button size="sm" asChild>
-                                <Link href="/#contact">
-                                    Get started
+                                <Link href="https://api.whatsapp.com/send?phone=50764523183&text=Estoy%20interesado%20en%20AtenBot!%20Necesito%20m%C3%A1s%20informaci%C3%B3n%2C%20por%20favor." target="_blank">
+                                    Empieza Ahora
                                 </Link>
                             </Button>
                             <Button size="sm" variant="outline" asChild>
@@ -37,8 +37,8 @@ const LinkShorteningPage = () => {
                 <AnimationContainer delay={0.2} className="w-full">
                     <div className="w-full flex max-w-4xl py-10 mx-auto">
                         <Image
-                            src="/assets/password-protection.svg"
-                            alt="Protect your links with a password"
+                            src="/assets/analytics.svg"
+                            alt="Advanced analytics for your business"
                             width={80}
                             height={80}
                             className="w-full h-auto"
@@ -97,4 +97,4 @@ const LinkShorteningPage = () => {
     )
 };
 
-export default LinkShorteningPage
+export default AnalyticsPage

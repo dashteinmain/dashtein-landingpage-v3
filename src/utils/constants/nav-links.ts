@@ -1,4 +1,4 @@
-import { HelpCircleIcon, LineChartIcon, LockIcon, NewspaperIcon, QrCodeIcon, Receipt } from "lucide-react";
+import { BotMessageSquare, Calendar, HelpCircleIcon, NewspaperIcon, Receipt, WaypointsIcon } from "lucide-react";
 
 export const NAV_LINKS = [
     {
@@ -12,22 +12,22 @@ export const NAV_LINKS = [
                 icon: Receipt,
             },
             {
-                title: "Password Protection",
-                tagline: "Secure your links with a password.",
-                href: "/soluciones/password-protection",
-                icon: LockIcon,
+                title: "AgendaBot",
+                tagline: "Asistente 24/7 para agendar citas.",
+                href: "/soluciones/agendabot",
+                icon: Calendar,
             },
             {
-                title: "Advanced Analytics",
-                tagline: "Gain insights into who is clicking your links.",
-                href: "/soluciones/analytics",
-                icon: LineChartIcon,
+                title: "AtenBot",
+                tagline: "Asistente 24/7 para clientes.",
+                href: "/soluciones/atenbot",
+                icon: BotMessageSquare,
             },
             {
-                title: "Custom QR Codes",
-                tagline: "Use QR codes to reach your audience.",
-                href: "/soluciones/qr-codes",
-                icon: QrCodeIcon,
+                title: "Bots Personalizados",
+                tagline: "Automatizaciones a medida.",
+                href: "/soluciones/botpersonalizados",
+                icon: WaypointsIcon,
             },
         ],
     },

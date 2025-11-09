@@ -15,7 +15,7 @@ export const CARDS = [
         Icon: Receipt,
         name: "FacturoBot",
         description: "Automatiza el procesamiento de facturas vía WhatsApp con IA.",
-        href: "#",
+        href: "/soluciones/facturobot",
         cta: "Conocer más",
         className: "col-span-3 lg:col-span-1",
         background: (
@@ -54,7 +54,7 @@ export const CARDS = [
         name: "AgendaBot",
         description: "Asistente virtual 24/7 para agendar citas vía WhatsApp.",
         className: "col-span-3 lg:col-span-1",
-        href: "#",
+        href: "/soluciones/agendabot",
         cta: "Conocer más",
         background: (
             <div className="absolute left-10 top-10 w-[320px] origin-top rounded-lg border border-border bg-neutral-950 transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_20%,#000_100%)] group-hover:scale-105">
@@ -91,7 +91,7 @@ export const CARDS = [
         name: "AtenBot",
         description: "Asistente virtual 24/7 para atención al cliente vía WhatsApp.",
         className: "col-span-3 lg:col-span-1",
-        href: "#",
+        href: "/soluciones/atenbot",
         cta: "Conocer más",
         background: (
             <div className="absolute left-10 top-10 w-[320px] origin-top rounded-lg border border-border bg-neutral-950 transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_20%,#000_100%)] group-hover:scale-105">
@@ -127,7 +127,7 @@ export const CARDS = [
         Icon: WaypointsIcon,
         name: "Bots Personalizados",
         description: "Bots conversacionales y automatizaciones a medida para tu negocio.",
-        href: "#",
+        href: "/soluciones/botpersonalizados",
         cta: "Conocer más",
         className: "col-span-3 lg:col-span-2 max-w-full overflow-hidden",
         background: (
