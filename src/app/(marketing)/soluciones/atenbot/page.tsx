@@ -2,10 +2,16 @@ import { AnimationContainer, MaxWidthWrapper } from "@/components";
 import { Button } from "@/components/ui/button";
 import { LampContainer } from "@/components/ui/lamp";
 import MagicBadge from "@/components/ui/magic-badge";
-import { COMPANIES } from "@/utils";
+import { COMPANIES, generateMetadata } from "@/utils";
 import { ArrowRightIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+
+export const metadata = generateMetadata({
+    title: "AtenBot - Atiende clientes automáticamente con IA | Dashtein",
+    description: "No pierdas más clientes por no responder a tiempo. Atiende tus clientes con eficiencia 24/7 con nuestro asistente virtual inteligente.",
+    image: "/assets/atenbot.svg", // Mejor usar PNG 1200x630px: "/assets/og/atenbot.png"
+});
 
 const AnalyticsPage = () => {
     return (

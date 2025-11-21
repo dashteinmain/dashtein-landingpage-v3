@@ -2,10 +2,16 @@ import { AnimationContainer, MaxWidthWrapper } from "@/components";
 import { Button } from "@/components/ui/button";
 import { LampContainer } from "@/components/ui/lamp";
 import MagicBadge from "@/components/ui/magic-badge";
-import { COMPANIES } from "@/utils";
+import { COMPANIES, generateMetadata } from "@/utils";
 import { ArrowRightIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+
+export const metadata = generateMetadata({
+    title: "AgendaBot - Agenda citas automáticamente con IA | Dashtein",
+    description: "Asistente virtual 24/7 que atiende a tus clientes para agendar sus citas automáticamente. Agenda tus citas como un PRO con inteligencia artificial.",
+    image: "/assets/agendabot.svg", // Mejor usar PNG 1200x630px: "/assets/og/agendabot.png"
+});
 
 const LinkShorteningPage = () => {
     return (

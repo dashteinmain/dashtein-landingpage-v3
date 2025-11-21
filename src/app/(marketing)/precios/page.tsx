@@ -7,6 +7,12 @@ import {
 } from "@/components/ui/accordion";
 import MagicBadge from "@/components/ui/magic-badge";
 import { FAQ } from "@/utils/constants/faq";
+import { generateMetadata } from "@/utils";
+
+export const metadata = generateMetadata({
+    title: "Precios - Dashtein | Planes de Automatización con IA",
+    description: "Planes accesibles para automatizar tu negocio. Prueba nuestros servicios sin compromisos. Escoge el plan que se adapte a tu empresa.",
+});
 
 const PricingPage = () => {
     return (
