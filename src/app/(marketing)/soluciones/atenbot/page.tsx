@@ -37,7 +37,7 @@ const AnalyticsPage = () => {
                 <AnimationContainer delay={0.2} className="w-full">
                     <div className="w-full flex max-w-4xl py-10 mx-auto">
                         <Image
-                            src="/assets/analytics.svg"
+                            src="/assets/atenbot.svg"
                             alt="Advanced analytics for your business"
                             width={80}
                             height={80}
@@ -83,7 +83,7 @@ const AnalyticsPage = () => {
                             </p>
                             <div className="mt-6">
                                 <Button asChild>
-                                    <Link href="/#contact" className="flex items-center">
+                                    <Link href="https://api.whatsapp.com/send?phone=50764523183" target="_blank" className="flex items-center">
                                         Agenda tu Consulta gratuita
                                         <ArrowRightIcon className="w-4 h-4 ml-2" />
                                     </Link>

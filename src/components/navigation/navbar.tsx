@@ -45,7 +45,7 @@ const Navbar = () => {
             <AnimationContainer reverse delay={0.1} className="size-full">
                 <MaxWidthWrapper className="flex items-center justify-between">
                     <div className="flex items-center space-x-12">
-                        <Link href="/#inicio">
+                        <Link href="/">
                             <span className="text-lg font-bold font-heading !leading-none">
                                 dashtein.
                             </span>
