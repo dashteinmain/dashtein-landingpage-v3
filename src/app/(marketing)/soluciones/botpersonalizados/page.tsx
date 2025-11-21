@@ -2,10 +2,15 @@ import { AnimationContainer, MaxWidthWrapper } from "@/components";
 import { Button } from "@/components/ui/button";
 import { LampContainer } from "@/components/ui/lamp";
 import MagicBadge from "@/components/ui/magic-badge";
-import { COMPANIES } from "@/utils";
+import { COMPANIES, generateMetadata } from "@/utils";
 import { ArrowRightIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+
+export const metadata = generateMetadata({
+    title: "Bots Personalizados - Automatización a Medida con IA | Dashtein",
+    description: "Crea automatizaciones únicas para tu negocio. Aumenta tu productividad sin contratar más personal con software a medida.",
+});
 
 const LinkShorteningPage = () => {
     return (

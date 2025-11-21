@@ -6,6 +6,14 @@ import { COMPANIES } from "@/utils";
 import { ArrowRightIcon } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { generateMetadata } from "@/utils";
+
+export const metadata = generateMetadata({
+    title: "Facturobot - Automatiza el procesamiento de facturas | Dashtein",
+    description: "Procesa facturas automáticamente con IA. Envía tus facturas por WhatsApp directo a tus sistemas. Simple, rápido y eficiente.",
+    image: "/assets/facturobot.svg", // Mejor usar PNG 1200x630px: "/assets/og/facturobot.png"
+});
+
 
 const LinkShorteningPage = () => {
     return (
