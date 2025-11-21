@@ -113,7 +113,7 @@ const Navbar = () => {
                             <Link href="/precios" className={buttonVariants({ size: "sm", variant: "ghost" })}>
                                 Precios
                             </Link>
-                            <Link href="/#contact" className={buttonVariants({ size: "sm" })}>
+                            <Link href="https://api.whatsapp.com/send?phone=50764523183" target="_blank" className={buttonVariants({ size: "sm" })}>
                                 Contáctanos
                             </Link>
                         </div>

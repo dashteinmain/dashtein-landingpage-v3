@@ -43,7 +43,7 @@ const HomePage = () => {
                         </p>
                         <div className="flex items-center justify-center whitespace-nowrap gap-4 z-50">
                             <Button asChild>
-                                <Link href="/#contact" className="flex items-center">
+                                <Link href="https://api.whatsapp.com/send?phone=50764523183" target="_blank" className="flex items-center">
                                     Contáctanos
                                     <ArrowRightIcon className="w-4 h-4 ml-2" />
                                 </Link>
