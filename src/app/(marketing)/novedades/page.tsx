@@ -1,19 +1,19 @@
-import { AnimationContainer } from "@/components";
+import AnimationContainer from "@/components/global/animation-container";
 import React from 'react'
 
-const HelpPage = () => {
+const ChangeLogPage = () => {
     return (
         <div className="flex flex-col items-center justify-center py-20">
-            <AnimationContainer delay={0.1} className="w-full">
+            <AnimationContainer delay={0.1}>
                 <h1 className="text-2xl md:text-4xl lg:text-5xl font-semibold font-heading text-center mt-6 !leading-tight">
-                    Help
+                    Novedades
                 </h1>
                 <p className="text-base md:text-lg mt-6 text-center text-muted-foreground">
-                    Need help? We got you.
+                    Entérate de los últimos cambios hechos al sistema.
                 </p>
             </AnimationContainer>
         </div>
     )
 };
 
-export default HelpPage
+export default ChangeLogPage

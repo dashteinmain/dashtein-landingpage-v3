@@ -83,7 +83,7 @@ const LinkShorteningPage = () => {
                             </p>
                             <div className="mt-6">
                                 <Button asChild>
-                                    <Link href="/#contact" className="flex items-center">
+                                    <Link href="https://api.whatsapp.com/send?phone=50764523183" target="_blank" className="flex items-center">
                                         Agenda tu Consulta gratuita
                                         <ArrowRightIcon className="w-4 h-4 ml-2" />
                                     </Link>

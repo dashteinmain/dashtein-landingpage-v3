@@ -36,29 +36,19 @@ export const NAV_LINKS = [
         href: "/precios",
     },
     {
-        title: "Enterprise",
-        href: "/enterprise",
-    },
-    {
-        title: "Resources",
-        href: "/resources",
+        title: "Recursos",
+        href: "/recursos",
         menu: [
             {
-                title: "Blog",
-                tagline: "Read articles on the latest trends in tech.",
-                href: "/resources/blog",
-                icon: NewspaperIcon,
-            },
-            {
-                title: "Help",
-                tagline: "Get answers to your questions.",
-                href: "/resources/help",
+                title: "Ayuda",
+                tagline: "Obtén respuesta a tus preguntas.",
+                href: "/recursos/ayuda",
                 icon: HelpCircleIcon,
             },
         ]
     },
     {
-        title: "Changelog",
-        href: "/changelog",
+        title: "Novedades",
+        href: "/novedades",
     },
 ];

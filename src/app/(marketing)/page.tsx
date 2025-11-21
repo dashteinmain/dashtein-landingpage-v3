@@ -43,7 +43,7 @@ const HomePage = () => {
                         </p>
                         <div className="flex items-center justify-center whitespace-nowrap gap-4 z-50">
                             <Button asChild>
-                                <Link href="/#contact" className="flex items-center">
+                                <Link href="https://api.whatsapp.com/send?phone=50764523183" target="_blank" className="flex items-center">
                                     Contáctanos
                                     <ArrowRightIcon className="w-4 h-4 ml-2" />
                                 </Link>
@@ -91,14 +91,16 @@ const HomePage = () => {
                                 <ul className="flex flex-wrap items-center gap-x-6 gap-y-6 md:gap-x-16 justify-center">
                                     {COMPANIES.map((company) => (
                                         <li key={company.name}>
-                                            <Image
+                                            <Link href={company.site} target="_blank">
+                                                <Image
                                                 src={company.logo}
                                                 alt={company.name}
                                                 width={80}
                                                 height={80}
                                                 quality={100}
                                                 className="w-28 h-auto"
-                                            />
+                                                />
+                                            </Link>
                                         </li>
                                     ))}
                                 </ul>
@@ -255,8 +257,10 @@ const HomePage = () => {
                             </p>
                             <div className="mt-6">
                                 <Button>
+                                    <Link href="https://api.whatsapp.com/send?phone=50764523183" target="_blank" className="flex items-center">
                                     Agenda tu Consulta Gratuita
                                     <ArrowRightIcon className="w-4 h-4 ml-2" />
+                                    </Link>
                                 </Button>
                             </div>
                         </div>

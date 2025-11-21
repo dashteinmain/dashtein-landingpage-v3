@@ -34,17 +34,7 @@ const LinkShorteningPage = () => {
                         </div>
                     </div>
                 </AnimationContainer>
-                <AnimationContainer delay={0.2} className="w-full">
-                    <div className="w-full flex max-w-4xl py-10 mx-auto">
-                        <Image
-                            src="/assets/qr-codes.svg"
-                            alt="Create QR codes for your links"
-                            width={80}
-                            height={80}
-                            className="w-full h-auto"
-                        />
-                    </div>
-                </AnimationContainer>
+
                 <AnimationContainer delay={0.3} className="w-full">
                     <div className="py-14">
                         <div className="mx-auto px-4 md:px-8">
@@ -83,7 +73,7 @@ const LinkShorteningPage = () => {
                             </p>
                             <div className="mt-6">
                                 <Button asChild>
-                                    <Link href="/#contact" className="flex items-center">
+                                    <Link href="https://api.whatsapp.com/send?phone=50764523183" target="_blank" className="flex items-center">
                                         Agenda tu Consulta gratuita
                                         <ArrowRightIcon className="w-4 h-4 ml-2" />
                                     </Link>

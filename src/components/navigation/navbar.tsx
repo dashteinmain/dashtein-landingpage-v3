@@ -45,7 +45,7 @@ const Navbar = () => {
             <AnimationContainer reverse delay={0.1} className="size-full">
                 <MaxWidthWrapper className="flex items-center justify-between">
                     <div className="flex items-center space-x-12">
-                        <Link href="/#inicio">
+                        <Link href="/">
                             <span className="text-lg font-bold font-heading !leading-none">
                                 dashtein.
                             </span>
@@ -113,7 +113,7 @@ const Navbar = () => {
                             <Link href="/precios" className={buttonVariants({ size: "sm", variant: "ghost" })}>
                                 Precios
                             </Link>
-                            <Link href="/#contact" className={buttonVariants({ size: "sm" })}>
+                            <Link href="https://api.whatsapp.com/send?phone=50764523183" target="_blank" className={buttonVariants({ size: "sm" })}>
                                 Contáctanos
                             </Link>
                         </div>
