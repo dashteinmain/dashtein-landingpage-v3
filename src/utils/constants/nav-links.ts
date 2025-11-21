@@ -36,10 +36,6 @@ export const NAV_LINKS = [
         href: "/precios",
     },
     {
-        title: "Enterprise",
-        href: "/enterprise",
-    },
-    {
         title: "Recursos",
         href: "/recursos",
         menu: [
@@ -52,7 +48,7 @@ export const NAV_LINKS = [
         ]
     },
     {
-        title: "Changelog",
-        href: "/changelog",
+        title: "Novedades",
+        href: "/novedades",
     },
 ];
