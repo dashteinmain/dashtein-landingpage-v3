@@ -25,9 +25,13 @@ export const aeonik = localFont({
         }
     ],
     variable: "--font-aeonik",
+    display: "swap",
+    preload: true,
 });
 
 export const inter = Inter({
     subsets: ["latin"],
     variable: "--font-inter",
+    display: "swap",  // ✅ También agregar aquí
+    preload: true
 });
