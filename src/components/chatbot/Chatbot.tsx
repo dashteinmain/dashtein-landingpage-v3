@@ -282,6 +282,7 @@ const SimpleChatWidget: React.FC = () => {
                 <MessageInput
                   placeholder="Escribe tu mensaje aquí..."
                   onSend={handleSend}
+                  attachButton={false}
                 />
               </ChatContainer>
             </MainContainer>
