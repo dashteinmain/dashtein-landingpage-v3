@@ -81,7 +81,7 @@ const PricingCards = () => {
                                 {plan.info}
                             </CardDescription>
                             <h5 className="text-3xl font-semibold">
-                                {plan.name !== "Bots Personalizados" ? "$" : ""}{plan.price.yearly}
+                                {plan.name !== "Bots Personalizados" ? "$" : ""}{plan.price.monthly}
                                 <span className="text-base text-muted-foreground font-normal">
                                     {plan.name !== "Bots Personalizados" ? "/mes" : ""}
                                 </span>
