@@ -20,6 +20,11 @@ export const generateMetadata = ({
             sizes: "16x16",
             url: "/favicon-16x16.png"
         },
+        {
+            rel: "icon",
+            type: "image/png",
+            url: "/favicon.png"
+        },
     ],
     noIndex = false
 }: {
@@ -35,7 +40,11 @@ export const generateMetadata = ({
     openGraph: {
         title,
         description,
-        ...(image && { images: [{ url: image }] }),
+        type: "website",
+        locale: "es_ES",
+        url: process.env.NEXT_PUBLIC_APP_DOMAIN || "https://www.dashtein.com",
+        siteName: process.env.NEXT_PUBLIC_APP_NAME || "DASHTEIN SOFTWARE SOLUTIONS",
+        ...(image && { images: [{ url: image, width: 1200, height: 630, alt: title }] }),
     },
     twitter: {
         title,

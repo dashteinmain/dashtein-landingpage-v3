@@ -1,4 +1,4 @@
-import { Providers } from "@/components";
+import { OrganizationSchema, Providers } from "@/components";
 import { Toaster } from "@/components/ui/sonner";
 import "@/styles/globals.css";
 import { aeonik, cn, generateMetadata, inter } from "@/utils";
@@ -13,6 +13,9 @@ export default function RootLayout({
 }) {
     return (
         <html lang="es" className="scrollbar">
+            <head>
+                <OrganizationSchema />
+            </head>
             <body
                 className={cn(
                     "min-h-screen bg-background text-foreground antialiased !font-default overflow-x-hidden",
