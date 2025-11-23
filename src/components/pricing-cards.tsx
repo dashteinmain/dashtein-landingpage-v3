@@ -81,9 +81,9 @@ const PricingCards = () => {
                                 {plan.info}
                             </CardDescription>
                             <h5 className="text-3xl font-semibold">
-                                ${plan.price.monthly}
+                                {plan.name !== "Bots Personalizados" ? "$" : ""}{plan.price.yearly}
                                 <span className="text-base text-muted-foreground font-normal">
-                                    {plan.name !== "Free" ? "/mes" : ""}
+                                    {plan.name !== "Bots Personalizados" ? "/mes" : ""}
                                 </span>
                             </h5>
                         </CardHeader>
@@ -145,11 +145,11 @@ const PricingCards = () => {
                                 {plan.info}
                             </CardDescription>
                             <h5 className="text-3xl font-semibold flex items-end">
-                                ${plan.price.yearly}
+                                {plan.name !== "Bots Personalizados" ? "$" : ""}{plan.price.yearly}
                                 <div className="text-base text-muted-foreground font-normal">
-                                    {plan.name !== "Free" ? "/año" : ""}
+                                    {plan.name !== "Bots Personalizados" ? "/año" : ""}
                                 </div>
-                                {plan.name !== "Free" && (
+                                {plan.name !== "Bots Personalizados" && (
                                     <motion.span
                                         initial={{ opacity: 0, y: 10 }}
                                         animate={{ opacity: 1, y: 0 }}
