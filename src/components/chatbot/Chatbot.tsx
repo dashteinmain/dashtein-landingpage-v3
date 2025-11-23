@@ -177,7 +177,7 @@ const SimpleChatWidget: React.FC = () => {
             <Avatar
               src="/favicon.png"
               name="Bot"
-              size="sm"
+              size="md"
               status="available"
             />
           </div>
