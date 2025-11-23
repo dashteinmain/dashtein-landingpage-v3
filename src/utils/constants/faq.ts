@@ -1,42 +1,42 @@
 export const FAQ = [
     {
         id: "item-1",
-        question: "Is it accessible?",
-        answer: "Yes. It adheres to the WAI-ARIA design pattern, ensuring accessibility for all users.",
+        question: "¿Qué productos ofrecen?",
+        answer: "Ofrecemos cuatro soluciones de automatización con IA: FacturoBot para procesamiento automático de facturas, AtenBot para atención al cliente 24/7, AgendaBot para agendamiento de citas, y Bots Personalizados adaptados a las necesidades específicas de tu negocio.",
     },
     {
         id: "item-2",
-        question: "What features does the software offer?",
-        answer: "Our link management software offers features like link shortening, click tracking, customizable branded links, and AI-powered suggestions.",
+        question: "¿Cómo funciona FacturoBot?",
+        answer: "FacturoBot te permite procesar facturas automáticamente enviándolas por WhatsApp. La IA extrae los datos, los organiza y los exporta a Excel. Incluye almacenamiento seguro en la nube y opcionalmente puede integrarse con QuickBooks o tu ERP.",
     },
     {
         id: "item-3",
-        question: "How does the pricing work?",
-        answer: "We offer three plans: Free, Pro ($9/month), and Business ($49/month). Yearly subscriptions come with a discount.",
+        question: "¿Cómo funciona el sistema de precios?",
+        answer: "FacturoBot cobra $20 por cada 100 facturas procesadas. AtenBot cobra $0.60 por conversación (ventana de 24 horas). AgendaBot cobra $0.80 por conversación. Los Bots Personalizados se cotizan según complejidad. Todos tienen descuento del 12% en planes anuales.",
     },
     {
         id: "item-4",
-        question: "Can I upgrade or downgrade my plan?",
-        answer: "Yes! You can easily upgrade or downgrade your plan at any time through your account settings.",
+        question: "¿Qué es una 'conversación' en el modelo de precios?",
+        answer: "Una conversación es una ventana de 24 horas desde el primer mensaje del cliente. Esto significa que todos los mensajes intercambiados dentro de ese período de 24 horas se cuentan como una sola conversación.",
     },
     {
         id: "item-5",
-        question: "Is there customer support available?",
-        answer: "Absolutely! We provide community support for all users and priority support for Pro and Business plan subscribers.",
+        question: "¿Qué tipo de soporte ofrecen?",
+        answer: "FacturoBot incluye soporte por email. AtenBot y AgendaBot incluyen soporte prioritario. Los Bots Personalizados incluyen soporte dedicado 24/7 con atención personalizada para tu negocio.",
     },
     {
         id: "item-6",
-        question: "Can I track my link clicks?",
-        answer: "Yes, our software allows you to track clicks on your links, providing insights into user engagement and demographics.",
+        question: "¿Puedo integrar los bots con mis sistemas existentes?",
+        answer: "Sí. FacturoBot puede integrarse con QuickBooks o tu ERP. AgendaBot se sincroniza con Google Calendar y Microsoft 365. Los Bots Personalizados pueden integrarse con cualquier sistema: ERP, CRM, bases de datos o APIs que utilices.",
     },
     {
         id: "item-7",
-        question: "Is there a mobile app available?",
-        answer: "Currently, we do not have a dedicated mobile app, but our web application is fully responsive and works well on mobile devices.",
+        question: "¿Qué incluye un Bot Personalizado?",
+        answer: "Un Bot Personalizado incluye desarrollo 100% a medida, integración con tus sistemas, flujos conversacionales personalizados, casos de uso específicos (leads, ventas, RH, etc.), y opcionalmente SuperBot que combina AtenBot y AgendaBot en un solo flujo.",
     },
     {
         id: "item-8",
-        question: "What payment methods do you accept?",
-        answer: "We accept various payment methods including credit cards, PayPal, and other secure payment options.",
+        question: "¿Puedo probar los servicios antes de contratar?",
+        answer: "Sí, ofrecemos consultas gratuitas para todos nuestros productos. Contáctanos por WhatsApp y te ayudaremos a evaluar cuál solución se adapta mejor a tu negocio y te mostraremos cómo funciona.",
     },
 ];

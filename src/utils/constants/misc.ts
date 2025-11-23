@@ -15,6 +15,11 @@ export const COMPANIES = [
         logo: "/assets/company-02.svg",
         site: "https://www.planticeria.com",
     },
+    {
+        name: "CEVI",
+        logo: "/assets/company-03.svg",
+        site: "/",
+    },
 ] as const;
 
 export const PROCESS = [
