@@ -16,6 +16,8 @@ import PricingCards from "./pricing-cards";
 // blog
 import Blogs from "./blog/blogs";
 
+// seo
+import { OrganizationSchema } from "./seo/OrganizationSchema";
 
 export {
     Icons,
@@ -29,4 +31,6 @@ export {
     PricingCards,
 
     Blogs,
+
+    OrganizationSchema,
 };
