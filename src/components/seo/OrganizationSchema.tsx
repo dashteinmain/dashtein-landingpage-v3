@@ -10,7 +10,7 @@ interface OrganizationSchemaProps {
 export function OrganizationSchema({
     name = "DASHTEIN SOFTWARE SOLUTIONS",
     url = "https://www.dashtein.com",
-    logo = "https://www.dashtein.com/favicon.png",
+    logo = "https://www.dashtein.com/android-chrome-512x512.png",
     description = "Somos una agencia de servicios tecnológicos especializada en automatización empresarial y desarrollo de software a medida con Inteligencia Artificial."
 }: OrganizationSchemaProps) {
     const schemaData = {
@@ -33,9 +33,9 @@ export function OrganizationSchema({
         },
         "sameAs": [
             // Agrega aquí tus redes sociales si las tienes
-            // "https://www.facebook.com/dashtein",
-            // "https://www.linkedin.com/company/dashtein",
-            // "https://twitter.com/dashtein"
+             "https://www.instagram.com/dashtein.tech",
+             "https://www.tiktok.com/@dashtein.tech",
+             "https://www.linkedin.com/company/dashtein-software-solutions",
         ]
     };
 
